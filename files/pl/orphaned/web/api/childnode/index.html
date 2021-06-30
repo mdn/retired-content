@@ -1,6 +1,6 @@
 ---
 title: ChildNode
-slug: Web/API/ChildNode
+slug: orphaned/Web/API/ChildNode
 tags:
   - API
   - DOM
@@ -10,12 +10,13 @@ tags:
   - Node
   - TopicStub
 translation_of: Web/API/ChildNode
+original_slug: Web/API/ChildNode
 ---
 <div>{{APIRef("DOM")}}</div>
 
-<p>The <code><strong>ChildNode</strong></code> interface contains methods that are particular to {{domxref("Node")}} objects that can have a parent.</p>
+<p>The <code><strong>childNodes</strong></code> interface contains methods that are particular to {{domxref("Node")}} objects that can have a parent.</p>
 
-<p><code>ChildNode</code> is a raw interface and no object of this type can be created; it is implemented by {{domxref("Element")}}, {{domxref("DocumentType")}}, and {{domxref("CharacterData")}} objects.</p>
+<p><code>childNodes</code> is a raw interface and no object of this type can be created; it is implemented by {{domxref("Element")}}, {{domxref("DocumentType")}}, and {{domxref("CharacterData")}} objects.</p>
 
 <h2 id="Properties">Properties</h2>
 
@@ -26,14 +27,14 @@ translation_of: Web/API/ChildNode
 <p><em>There are no inherited methods.</em></p>
 
 <dl>
- <dt>{{domxref("ChildNode.remove()")}} {{experimental_inline}}</dt>
- <dd>Removes this <code>ChildNode</code> from the children list of its parent.</dd>
- <dt>{{domxref("ChildNode.before()")}} {{experimental_inline}}</dt>
- <dd>Inserts a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects in the children list of this <code>ChildNode</code>'s parent, just before this <code>ChildNode</code>. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
- <dt>{{domxref("ChildNode.after()")}} {{experimental_inline}}</dt>
- <dd>Inserts a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects in the children list of this <code>ChildNode</code>'s parent, just after this <code>ChildNode</code>. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
- <dt>{{domxref("ChildNode.replaceWith()")}} {{experimental_inline}}</dt>
- <dd>Replaces this <code>ChildNode</code> in the children list of its parent with a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
+ <dt>{{domxref("childNodes.remove()")}} {{experimental_inline}}</dt>
+ <dd>Removes this <code>childNodes</code> from the children list of its parent.</dd>
+ <dt>{{domxref("childNodes.before()")}} {{experimental_inline}}</dt>
+ <dd>Inserts a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects in the children list of this <code>childNodes</code>'s parent, just before this <code>childNodes</code>. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
+ <dt>{{domxref("childNodes.after()")}} {{experimental_inline}}</dt>
+ <dd>Inserts a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects in the children list of this <code>childNodes</code>'s parent, just after this <code>childNodes</code>. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
+ <dt>{{domxref("childNodes.replaceWith()")}} {{experimental_inline}}</dt>
+ <dd>Replaces this <code>childNodes</code> in the children list of its parent with a set of {{domxref("Node")}} or {{domxref("DOMString")}} objects. {{domxref("DOMString")}} objects are inserted as equivalent {{domxref("Text")}} nodes.</dd>
 </dl>
 
 <h2 id="Specifications">Specifications</h2>
@@ -46,9 +47,9 @@ translation_of: Web/API/ChildNode
    <th scope="col">Comment</th>
   </tr>
   <tr>
-   <td>{{SpecName('DOM WHATWG', '#interface-childnode', 'ChildNode')}}</td>
+   <td>{{SpecName('DOM WHATWG', '#interface-childnode', 'childNodes')}}</td>
    <td>{{Spec2('DOM WHATWG')}}</td>
-   <td>Split the <code>ElementTraversal</code> interface in {{domxref("ParentNode")}} and <code>ChildNode</code>. <code>previousElementSibling</code> and <code>nextElementSibling</code> are now defined on the latter. The {{domxref("CharacterData")}} and {{domxref("DocumentType")}} implemented the new interfaces. Added the <code>remove()</code>, <code>before()</code>, <code>after()</code> and <code>replaceWith()</code> methods.</td>
+   <td>Split the <code>ElementTraversal</code> interface in {{domxref("ParentNode")}} and <code>childNodes</code>. <code>previousElementSibling</code> and <code>nextElementSibling</code> are now defined on the latter. The {{domxref("CharacterData")}} and {{domxref("DocumentType")}} implemented the new interfaces. Added the <code>remove()</code>, <code>before()</code>, <code>after()</code> and <code>replaceWith()</code> methods.</td>
   </tr>
   <tr>
    <td>{{SpecName('Element Traversal', '#interface-elementTraversal', 'ElementTraversal')}}</td>
